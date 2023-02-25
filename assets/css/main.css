@@ -3624,6 +3624,7 @@ input, select, textarea {
 /* Contact */
 
 	#contact {
+		width: 100%;
 		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		overflow-x: hidden;
 	}
@@ -3637,14 +3638,14 @@ input, select, textarea {
 		}
 
 			#contact > .inner > :nth-child(2n - 1) {
-				padding: 4em 3em 2em 0 ;
+				padding: 4em 3em 2em 0 ; 
 				border-right: solid 1px rgba(212, 212, 255, 0.1);
-				width: 60%;
+				width: 40%;
 			}
 
 			#contact > .inner > :nth-child(2n) {
 				padding-left: 3em;
-				width: 40%;
+				width: 60%;
 			}
 
 			#contact > .inner > .split {
@@ -3659,10 +3660,11 @@ input, select, textarea {
 					#contact > .inner > .split > *:before {
 						border-top: solid 1px rgba(212, 212, 255, 0.1);
 						content: '';
-						display: block;
+						display: inline-block; /*made changes : block -> inline-block*/
 						margin-left: -3em;
 						position: absolute;
 						top: 0;
+						padding: 1rem 1rem;
 						width: calc(100vw + 3em);
 					}
 
